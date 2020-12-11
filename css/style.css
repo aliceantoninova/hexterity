@@ -633,14 +633,14 @@ img {
   }
 }
 
-.grid {
+.grid-places {
   margin: 0px auto;
   padding-bottom: 80px;
   max-width: 1500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
