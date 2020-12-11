@@ -43,7 +43,7 @@ body {
 
 .header__logo {
   max-width: 8%;
-  padding: 15px;
+  padding: 15px 25px;
 }
 
 .menu__checkbox {
@@ -91,7 +91,7 @@ body {
 @media screen and (min-width: 800px) {
   .header__logo {
     width: 50px;
-    padding: 20px 30px;
+    padding: 20px 50px;
   }
   .menu_toggle {
     display: none;
@@ -559,7 +559,12 @@ img {
 .grid-6 {
   margin: 0 auto;
   max-width: 1200px;
-  justify-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   text-align: center;
 }
 
