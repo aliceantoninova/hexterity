@@ -1,0 +1,24 @@
+<!-- HEADER -->
+    <header class="header">
+
+        <img class="header__logo" src="/images/other/logo-hexterity2.svg" alt="Hexterity Logo">
+
+        <nav class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__toggle"><img src="/images/icons/hamburger-menu-grey.png"></label>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link {% if menu === 'index' %}menu__item--active{% endif %}" href="/">Home</a></li>
+                <li class="menu__item">
+                    <a class="menu__link {% if menu === 'about' %}menu__item--active{% endif %}" href="/about/">About</a></li>
+                <li class="menu__item">
+                    <a class="menu__link {% if menu === 'industry' %}menu__item--active{% endif %}" href="/industry/">Industry</a></li>
+                <li class="menu__item">
+                    <a class="menu__link {% if menu === 'places' %}menu__item--active{% endif %}" href="/places/">Places to Meet</a></li>
+                <li class="menu__item">
+                    <a class="menu__link {% if menu === 'contact' %}menu__item--active{% endif %}" href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
+
+</header>

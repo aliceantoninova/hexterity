@@ -1,0 +1,26 @@
+.footer {
+    margin: 0px auto;
+    padding: 60px;
+    text-align: center;
+    background-color: $prominent;
+  }
+  
+  .footer__social {
+    padding: 20px;
+    max-width: 20px;
+  }
+  
+  .footer__text-paragraph {
+    color: $accent;
+    font-size: 12px;
+  }
+  
+  .footer-link {
+    color: $secondary;
+    text-decoration: none;
+  }
+    
+  .footer-link:hover {
+    color: $primary;
+    text-decoration: none;
+  }

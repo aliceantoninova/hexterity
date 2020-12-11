@@ -1,0 +1,17 @@
+Rozšíření:
+Live Sass Compiler
+
+Standardně kompiluje výsledné CSS do stejné složky,
+jako je zdrojové SCSS.
+
+Pokud chceme do jiné složky, musíme to nastavit
+v konfiguraci VS Code:
+
+"liveSassCompile.settings.formats": [
+	{
+		"format": "expanded",
+		"extensionName": ".css",
+		"savePath": "~/../css/"
+	}
+]
+

@@ -1,0 +1,125 @@
+
+      // THE IDEA
+
+  .theidea {
+    max-width: 300px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  
+    .theidea__image {
+      width: 80%;
+      padding-bottom: 20px;
+    }
+
+    .theidea__text-secondary {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .theidea__figure {
+      display: inline;
+    }
+
+  
+  @media screen and (min-width: 800px) {
+
+    .theidea {
+      max-width: 1140px;
+      margin: 200px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+      text-align: left;
+      align-items: center;
+    }
+    
+      &__image {
+        width: 100%;
+        grid-row: 1 / 2;
+        justify-self: right;
+      }
+
+      &__text-secondary {
+      font-size: 30px;
+      line-height: 1.6;
+      }
+
+  }
+    
+    // TEAM //
+
+    .team {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+        .team__image {
+          width: 100%;
+          padding-bottom: 30px;
+        }
+    
+        .team__figure {
+          display: inline;
+        }
+
+        .team__text-primary {
+            font-size: 35px;
+            font-family: 'Oswald', sans-serif;
+            line-height: 1.2;
+            text-align: center;
+            padding-top: 80px;
+          }
+
+        .team__text-secondary {
+          font-size: 20px;
+          line-height: 1.6;
+        }
+    
+      
+      @media screen and (min-width: 800px) {
+    
+        .team {
+          max-width: 1500px;
+          margin: 150px auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          column-gap: 150px;
+          align-items: center;
+        }
+        
+          .team__image {
+            width: 120%;
+            justify-self: center;
+          }
+    
+          .team__text-secondary {
+          font-size: 20px;
+          line-height: 1.6;
+          grid-row: 2;
+          }
+    
+      }
+
+        // NEXT STEP
+
+        .hero__nextstep {
+            margin-top: 80px;
+            position: relative;
+            background-image: url(/images/desktop/homepage_nextstep.png);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+        
+        
+        @media screen and (min-width: 800px) {
+            .hero__nextstep {
+            margin-top: 180px;
+            }
+        }
+
+      
+  
+  

@@ -1,0 +1,28 @@
+---
+layout: layouts/sablona.njk
+title: Visit Hexterity - Mobile App for Creative Collaboration
+menu: places
+---
+
+        <!-- HERO BANNER-->
+    <section class="hero" style="background-image: url(/images/desktop/placespage_hero.png);">
+        <div class="hero__text">   
+            <h1 class="hero__text-primary">Meet the best people <br>at specially curated places</h1>
+            <p class="hero__text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+        </div>
+    </section>
+
+    <h1 class="articles__text-primary">Find your next meeting inspiration in our articles</h1>
+
+
+    <div class="grid">
+        {% for articles in collections.article %}
+          <div class="grid__item">
+            <img class="grid__item-image" src="/images/desktop/{{ articles.data.picture }}" alt="Blog image">
+            <h2 class="grid__item-title">
+              <a href="{{ articles.url }}">{{ articles.data.title }}</a>
+            </h2>
+          </div>
+        {% endfor %}
+      </div>

@@ -1,0 +1,54 @@
+    // WHAT WE DO
+
+    .wrapper {
+        margin: 40px auto;
+        padding: 40px;
+      }
+      
+      .grid-6 {
+        margin: 0 auto;
+        max-width: 1200px;
+        justify-items: center;
+        text-align: center;
+      }
+    
+      .industry {
+        padding-bottom: 50px;
+      }
+    
+        .industry img {
+          width: 40%;
+          padding-top: 20px;
+        }
+    
+        .industry__text-primary {
+          padding: 5px;
+          font-size: 30px;
+          font-family: $font-special;
+        }
+    
+    
+    @media screen and (min-width: 800px) {
+      .wrapper {
+        margin: 80px auto;
+      }
+    
+      .grid-6 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 60px; 
+      }
+    
+      .industry {
+        max-width: 320px;
+      }
+
+      .industry img {
+        width: 50%;
+        padding-bottom: 15px;
+      }
+    
+        .industry__text-primary {
+          font-size: 30px;
+        }
+      }
